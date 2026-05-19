@@ -24,4 +24,4 @@ elif respuesta=="dividir":
         print("el resultado es",resultado)
 else:    print("operacion no valida")
 
-print("Gracias por usar la calculadora basica")
+print("Gracias por usar la calculadora basica.")
