@@ -1,5 +1,5 @@
 print("Bienvenido a la calculadora amor mio")
-print("para salir ingrese 'salir'")
+print("para salir ingresa 'salir'")
 num1=""
 num2=""
 while True:
