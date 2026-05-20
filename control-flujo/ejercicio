@@ -1,0 +1,18 @@
+
+
+def es_palindromo(texto):
+    lista=[]
+    lista_al_reves= lista[::-1]
+    for letra in texto:
+        if letra != " ":
+            lista.append(letra)
+            lista_al_reves=lista[::-1]
+        
+    print(lista)
+    print(lista_al_reves)
+    print(lista_al_reves==lista)
+        
+print("Bienvenida conita")
+n=input("ingresa aquí una palabra para verficar que efectivamente es un palindromo ")
+es_palindromo(n)
+print("Te amo mi amorcito<3") 

@@ -1,0 +1,12 @@
+nombre=input()
+
+lista=[]
+while nombre!="FIN":
+    lista.append(nombre)
+    nombre=input()
+
+
+indice=input(int())
+print(lista[int(indice)],"FUE ATACADO!")
+lista.pop(int(indice))
+print(lista)
