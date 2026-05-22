@@ -12,6 +12,7 @@ print(mascotas[1:3]) #imprime los elementos desde el indice 1 hasta el indice 3 
 
 
 print(mascotas[::2]) #imprime los elementos desde el indice 0 hasta el final de la lista, saltando de 2 en 2
+print(mascotas[2::])
 
 
 numeros= list(range(21))
