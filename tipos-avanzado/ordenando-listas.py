@@ -32,3 +32,41 @@ print(usuarios)
 
 usuarios.sort(key=lambda el:el[1])#ordena la lista de menor a mayor por el segundo elemento de cada sublista usando una funcion lambda
 print(usuarios)
+
+
+
+
+
+
+
+
+while fichas>0:
+    rint(tirada)
+
+    #print(concentracion_sietes)
+    
+    
+    if tirada=="7":
+        fichas-=1
+        concentracion_sietes+=1
+        concentracion_asteriscos=0
+    if concentracion_sietes==3:
+        print("Ganaste $500!")
+        dinero+=500
+    elif tirada=="*":
+        fichas-=1
+        concentracion_asteriscos+=1
+        concentracion_sietes=0
+    if concentracion_asteriscos==3:
+        fichas+=9
+        print("- conseguiste 3 fichas!")
+    else:
+        concentracion_asteriscos=0
+        concentracion_sietes=0
+        fichas-=1
+    
+    if fichas%3==0 or fichas%3==1:
+        print("- Quedan "+str(fichas//3)+" fichas")
+    tirada=input()
+
+print(dinero)
