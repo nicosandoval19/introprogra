@@ -1,0 +1,59 @@
+# =========================================
+# 5) Contar elementos de una lista
+# =========================================
+
+# Crear una función recursiva llamada contar(lista)
+#
+# Debe retornar cuántos elementos tiene la lista
+#
+# IMPORTANTE:
+# - NO puedes usar len()
+# - Debes usar recursividad
+# - NO uses for ni while
+#
+#
+# Ejemplos:
+#
+# contar([5, 8, 1, 3])
+#
+# Resultado:
+# 4
+#
+#
+# contar(["a", "b", "c"])
+#
+# Resultado:
+# 3
+#
+#
+# PISTA:
+#
+# Cada llamada puede contar:
+#
+# 1 + el resto de la lista
+#
+#
+# También piensa:
+#
+# ¿Cuál sería el caso base?
+#
+# ¿Qué pasa cuando la lista queda vacía?
+#
+#
+# Inputs para probar:
+#
+
+# print("------")
+# print(contar(["a","b","c"]))
+# print("------")
+# print(contar([]))
+
+def contar(lista):
+    if lista==[]:
+        return 0
+    else:
+        1+contar(lista[1:])
+        print(lista)
+        return 1+contar(lista[1:])
+
+print(contar([5,8,1,3]))
